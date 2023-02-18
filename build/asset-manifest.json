@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.js": "/static/js/main.dfef1ba7.js",
+    "static/media/Map.png": "/static/media/Map.748685c29899c5d75fd6.png",
+    "static/media/ApercuArabicPro-Medium.woff": "/static/media/ApercuArabicPro-Medium.6cd52262271665e6e640.woff",
+    "static/media/ApercuArabicPro-Medium.woff2": "/static/media/ApercuArabicPro-Medium.d2bb7b85e5a341d412d9.woff2",
+    "static/media/TwitterLogo.svg": "/static/media/TwitterLogo.0c6752ff5b56c74d18a120bf91872d17.svg",
+    "static/media/Smile3.svg": "/static/media/Smile3.25a11ca5f446227ef2c888d182d44011.svg",
+    "static/media/Smile2.svg": "/static/media/Smile2.84b4c9f975e7ffab456710046664869f.svg",
+    "static/media/Smile4.svg": "/static/media/Smile4.8499aaada2ef03144fc53d2182c29f65.svg",
+    "static/media/Smile1.svg": "/static/media/Smile1.94169edf777b88c644fab89cdef08783.svg",
+    "static/media/Smile6.svg": "/static/media/Smile6.a5fd478406c42a92849872c6a854df52.svg",
+    "static/media/PinterestLogo.svg": "/static/media/PinterestLogo.de56188d3f6ff5f66cb9ec1ea656b8de.svg",
+    "static/media/Smile5.svg": "/static/media/Smile5.399df32776421d98ed8c24f3f6672b15.svg",
+    "static/media/Cloud10.svg": "/static/media/Cloud10.435794a5e17fe52719752d07d535aaa9.svg",
+    "static/media/Cloud1.svg": "/static/media/Cloud1.557f3866b896e392c0aad321e61f588f.svg",
+    "static/media/Cloud9.svg": "/static/media/Cloud9.1148a3e0129e106917a6f9d4dd3f4349.svg",
+    "static/media/LinkedinLogo.svg": "/static/media/LinkedinLogo.1df150329a0c4473108773ef2a337aa9.svg",
+    "static/media/Cloud5.svg": "/static/media/Cloud5.a324e325445b4c8f6e34211d144ab49f.svg",
+    "static/media/Cloud6.svg": "/static/media/Cloud6.a324e325445b4c8f6e34211d144ab49f.svg",
+    "static/media/Cloud7.svg": "/static/media/Cloud7.a324e325445b4c8f6e34211d144ab49f.svg",
+    "static/media/Cloud2.svg": "/static/media/Cloud2.e932ddbccd852ecf5c258832768a9c54.svg",
+    "index.html": "/index.html",
+    "static/media/Cloud8.svg": "/static/media/Cloud8.5ca055bbc65fb99e4de21290fe2654ab.svg",
+    "static/media/Cloud3.svg": "/static/media/Cloud3.a595251ad5ccd07410bc6f4eaed6fdee.svg",
+    "static/media/Cloud4.svg": "/static/media/Cloud4.237a15abf35a90f9cf2247d36e5fe475.svg",
+    "static/media/FacebookLogo.svg": "/static/media/FacebookLogo.5b690d5484e1eccb17fe56db92c10c81.svg",
+    "main.dfef1ba7.js.map": "/static/js/main.dfef1ba7.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.dfef1ba7.js"
+  ]
+}
