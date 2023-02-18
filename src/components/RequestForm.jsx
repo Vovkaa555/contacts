@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import axios from 'axios';
 
 import {
   StyledRequestForm,
@@ -11,10 +12,12 @@ import {
   StyledMessageError,
   StyledSubmit,
   StyledSubmitedMessage,
+  StyledSubmitErrorMessage,
 } from './RequestFormStyles';
 
 function RequestForm() {
   const [isAlertVisible, setIsAlertVisible] = useState(false);
+  const [isErrorVisible, setIsErrorVisible] = useState(false);
   const {
     register,
     formState: { errors },
@@ -22,13 +25,29 @@ function RequestForm() {
     reset,
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
-    reset();
-    setIsAlertVisible(true);
-    setTimeout(() => {
-      setIsAlertVisible(false);
-    }, 3000);
+  const onSubmit = async (data) => {
+    const post = {
+      userName: data.userName,
+      userEmail: data.userEmail,
+      userMessage: data.userMessage,
+    };
+    try {
+      const res = await axios.post('https://contactsdb.up.railway.app/post', post);
+      console.log(res.data);
+      reset();
+      setIsAlertVisible(true);
+      setTimeout(() => {
+        setIsAlertVisible(false);
+      }, 3000);
+    } catch (e) {
+      console.log(e);
+      setIsErrorVisible(true);
+      setTimeout(() => {
+        setIsErrorVisible(false);
+      }, 3000);
+    }
+
+    console.log(data.userEmail);
   };
 
   return (
@@ -70,6 +89,11 @@ function RequestForm() {
       )}
       <StyledSubmit type="submit" value="Send message" />
       {isAlertVisible && <StyledSubmitedMessage>Form sended successfully!</StyledSubmitedMessage>}
+      {isErrorVisible && (
+        <StyledSubmitErrorMessage>
+          Oops, something went wrong... Try again later!
+        </StyledSubmitErrorMessage>
+      )}
     </StyledRequestForm>
   );
 }

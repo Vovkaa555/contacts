@@ -106,3 +106,11 @@ export const StyledSubmitedMessage = styled.span`
   top: 530px;
   left: 250px;
 `;
+
+export const StyledSubmitErrorMessage = styled.span`
+  color: red;
+  font-size: 15px;
+  position: absolute;
+  top: 530px;
+  left: 250px;
+`;
